@@ -66,9 +66,9 @@ CTC Loss (training) / Greedy Decode (inference)
 
 ---
 
-## This Implementation
+## Implementation
 
-The original codebase targets a HPC cluster running the full pipeline including Kaldi beam search - the primary compute bottleneck at scale. This implementation isolates Stage 1 from the full Kaldi pipeline and making two targeted adjustments enables training on a single consumer GPU:
+The original codebase targets a HPC cluster running the full pipeline including Kaldi beam search. This implementation isolates Stage 1 from the full Kaldi pipeline and making two targeted adjustments enables training on a single consumer GPU:
 
 | Hyperparameter | Original | This Repo | Notes |
 |---|---|---|---|
